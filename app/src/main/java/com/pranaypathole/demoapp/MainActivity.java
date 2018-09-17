@@ -24,6 +24,15 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "Sign up", Toast.LENGTH_SHORT).show();
     }
 
+    public void signin(View view){
+
+        EditText name = findViewById(R.id.name);
+        Log.i("Info", "Signing in!");
+
+        Toast.makeText(this, name.getText().toString()+"Signing in", Toast.LENGTH_SHORT).show();
+
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
